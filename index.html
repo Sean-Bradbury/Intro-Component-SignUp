@@ -1,78 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-<head>
-  <link rel="stylesheet" href="/css/style.css">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <title>Frontend Mentor | Intro component with sign up form</title>
 
-  <title>Frontend Mentor | Intro component with sign up form</title>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
 
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
-</head>
+  <body>
+    <section id="content">
+      <div class="overlay"></div>
+      <div class="content">
+        <div class="content-a">
+          <h1 class="title">Learn to code by watching others</h1>
 
-<body>
-  <section id="content">
-    <div class="overlay"></div>
-    <div class="content">
-      <div class="content-a">
-        <h1 class="title">Learn to code by watching others</h1>
-
-        <p>See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
-          but understanding how developers think is invaluable. </p>
-      </div>
-      <div class="content-b">
-        <div class="usp">
-          <p><span>Try it free 7 days</span> then $20/mo. thereafter</p>
+          <p>
+            See how experienced developers solve problems in real-time. Watching
+            scripted tutorials is great, but understanding how developers think
+            is invaluable.
+          </p>
         </div>
-        <form action="index.html" method="post" id="register-form">
-          <div class="form-group">
-            <input type="text" name="firstName" class="form-control" id="first-name" placeholder="First Name"
-              aria-label="First Name">
-            <img src="/images/icon-error.svg" alt="Error Icon" srcset="/images/icon-error.svg" class="error-icon">
+        <div class="content-b">
+          <div class="usp">
+            <p><span>Try it free 7 days</span> then $20/mo. thereafter</p>
           </div>
-          <div class="form-group">
-            <input type="text" name="lastName" class="form-control" id="last-name" placeholder="Last Name"
-              aria-label="Last Name">
-            <img src="/images/icon-error.svg" alt="Error Icon" srcset="/images/icon-error.svg" class="error-icon2">
-          </div>
-          <div class="form-group">
-            <input type="email" name="email" class="form-control" id="email" placeholder="Email" aria-label="Email">
-            <img src="/images/icon-error.svg" alt="Error Icon" srcset="/images/icon-error.svg" class="error-icon2">
-          </div>
-          <div class="form-group">
-            <input type="password" name="password" class="form-control" id="password" placeholder="Password"
-              aria-label="Password">
-            <img src="/images/icon-error.svg" alt="Error Icon" srcset="/images/icon-error.svg" class="error-icon2">
-          </div>
+          <form action="index.html" method="post" id="register-form">
+            <div class="form-group">
+              <input
+                type="text"
+                name="firstName"
+                class="form-control"
+                id="first-name"
+                placeholder="First Name"
+                aria-label="First Name"
+              />
+              <img
+                src="/images/icon-error.svg"
+                alt="Error Icon"
+                srcset="/images/icon-error.svg"
+                class="error-icon"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="text"
+                name="lastName"
+                class="form-control"
+                id="last-name"
+                placeholder="Last Name"
+                aria-label="Last Name"
+              />
+              <img
+                src="/images/icon-error.svg"
+                alt="Error Icon"
+                srcset="/images/icon-error.svg"
+                class="error-icon2"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="email"
+                name="email"
+                class="form-control"
+                id="email"
+                placeholder="Email"
+                aria-label="Email"
+              />
+              <img
+                src="/images/icon-error.svg"
+                alt="Error Icon"
+                srcset="/images/icon-error.svg"
+                class="error-icon2"
+              />
+            </div>
+            <div class="form-group">
+              <input
+                type="password"
+                name="password"
+                class="form-control"
+                id="password"
+                placeholder="Password"
+                aria-label="Password"
+              />
+              <img
+                src="/images/icon-error.svg"
+                alt="Error Icon"
+                srcset="/images/icon-error.svg"
+                class="error-icon2"
+              />
+            </div>
 
-          <button class="form-btn" id="submit-button" type="submit">CLAIM YOUR FREE TRIAL</button>
-          <p class="tcs">By clicking the button, you are agreeing to our <span>Terms and Services</span></p>
-        </form>
+            <button class="form-btn" id="submit-button" type="submit">
+              CLAIM YOUR FREE TRIAL
+            </button>
+            <p class="tcs">
+              By clicking the button, you are agreeing to our
+              <span>Terms and Services</span>
+            </p>
+          </form>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
-  <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.19.1/jquery.validate.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.19.1/jquery.validate.min.js"></script>
 
-  <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.19.1/additional-methods.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.19.1/additional-methods.min.js"></script>
 
-  <script src="validation.js"></script>
-</body>
-
+    <script src="validation.js"></script>
+  </body>
 </html>
