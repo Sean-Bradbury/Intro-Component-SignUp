@@ -1,0 +1,179 @@
+// Fonts
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.title {
+  font-size: 3rem;
+  line-height: 1;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.4;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+// Content
+#content {
+  height: 100vh;
+  display: flex;
+  align-content: center;
+  background-image: url(/images/bg-intro-desktop.png);
+  color: #fff;
+
+  .overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(248, 98, 98, 0.8);
+    z-index: -1;
+  }
+
+  .content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+    align-content: center;
+    justify-content: center;
+    padding: 8%;
+
+    &-a {
+      align-self: center;
+    }
+
+    &-b {
+      .usp {
+        background-color: #5D54A3;
+        width: 100%;
+        padding: 0.2rem;
+        border-radius: 10px;
+        text-align: center;
+        margin: 1rem 0;
+        box-shadow: 0px 5px rgba($color: #5c5c5c, $alpha: 0.2);
+
+        span {
+          font-weight: bold;
+        }
+      }
+
+      form {
+        background: #fff;
+        border-radius: 10px;
+        padding: 1.5rem;
+        box-shadow: 0px 10px rgba($color: #5c5c5c, $alpha: 0.2);
+        text-align: center;
+        position: relative;
+
+        .form-group {
+          width: 100%;
+
+          input {
+            margin: auto;
+            display: block;
+            width: 90%;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            border-radius: 10px;
+            border: 1px solid lightgray;
+
+            &:placeholder-shown {
+              font-weight: bold;
+            }
+
+
+          }
+        }
+
+        .form-btn {
+          margin: auto;
+          background-color: #37CC8A;
+          box-shadow: 0px 2px rgb(76, 167, 127);
+          padding: 1rem;
+          border-radius: 10px;
+          border: none;
+          color: #fff;
+          width: 97%;
+          cursor: pointer;
+          font-weight: bold;
+          font-size: 1.1rem;
+
+          &:hover {
+            opacity: 0.9;
+          }
+        }
+
+        .tcs {
+          color: rgb(173, 173, 173);
+          font-size: 0.8rem;
+          text-align: center;
+          padding: 0.5rem;
+
+          span {
+            color: #EB8C91;
+            font-weight: bold;
+          }
+        }
+
+        // Validation error styles
+        .form-group {
+          position: relative;
+
+          .error-icon {
+            position: absolute;
+            top: 20%;
+            right: 7%;
+            float: right;
+            visibility: hidden;
+          }
+
+          .error-icon2 {
+            position: absolute;
+            top: 45%;
+            right: 7%;
+            float: right;
+            visibility: hidden;
+          }
+        }
+
+        .has-error {
+          input {
+            border: 1px solid rgba(248, 98, 98, 0.8);
+          }
+
+          .error-icon {
+            visibility: visible;
+          }
+
+          .error-icon2 {
+            visibility: visible;
+          }
+        }
+
+        #first-name-error,
+        #last-name-error,
+        #email-error,
+        #password-error,
+        #password2-error {
+          color: rgba(248, 98, 98, 0.8);
+          float: right;
+          padding-right: 1rem;
+          position: relative;
+          top: -20px;
+          right: -5px;
+          font-style: italic;
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+}
+
+@import "mobile";
