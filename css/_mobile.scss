@@ -1,0 +1,50 @@
+@media only screen and (max-width:500px) {
+  #content {
+    height: 100%;
+    text-align: center;
+
+    .content {
+      grid-template-columns: 1fr;
+      padding: 0 5%;
+
+
+      &-a {
+        padding-top: 3rem;
+
+        .title {
+          font-size: 2rem;
+        }
+
+      }
+
+      &-b {
+        padding-bottom: 2rem;
+
+        .usp {
+          text-align: center;
+        }
+
+        p {
+          text-align: center;
+          line-height: 1.5;
+          width: 60%;
+          margin: auto;
+          padding: 1rem 0;
+        }
+
+        form {
+          .form-btn {
+            font-size: 0.9rem;
+          }
+        }
+
+        .tcs {
+          width: 90%;
+          margin-top: 1rem;
+        }
+
+
+      }
+    }
+  }
+}
