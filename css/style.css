@@ -1,18 +1,18 @@
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .title {
   font-size: 3rem;
   line-height: 1;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
 }
 
 p {
   font-size: 1rem;
   line-height: 1.4;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 #content {
@@ -59,7 +59,7 @@ p {
 }
 
 #content .content-b .usp {
-  background-color: #5D54A3;
+  background-color: #5d54a3;
   width: 100%;
   padding: 0.2rem;
   border-radius: 10px;
@@ -103,7 +103,7 @@ p {
 
 #content .content-b form .form-btn {
   margin: auto;
-  background-color: #37CC8A;
+  background-color: #37cc8a;
   -webkit-box-shadow: 0px 2px #4ca77f;
           box-shadow: 0px 2px #4ca77f;
   padding: 1rem;
@@ -128,7 +128,7 @@ p {
 }
 
 #content .content-b form .tcs span {
-  color: #EB8C91;
+  color: #eb8c91;
   font-weight: bold;
 }
 
@@ -138,7 +138,7 @@ p {
 
 #content .content-b form .form-group .error-icon {
   position: absolute;
-  top: 20%;
+  bottom: 25%;
   right: 7%;
   float: right;
   visibility: hidden;
@@ -146,7 +146,7 @@ p {
 
 #content .content-b form .form-group .error-icon2 {
   position: absolute;
-  top: 45%;
+  bottom: 20%;
   right: 7%;
   float: right;
   visibility: hidden;
@@ -164,11 +164,11 @@ p {
   visibility: visible;
 }
 
-#content .content-b form #first-name-error,
-#content .content-b form #last-name-error,
-#content .content-b form #email-error,
-#content .content-b form #password-error,
-#content .content-b form #password2-error {
+#content .content-b form .has-error #first-name-error,
+#content .content-b form .has-error #last-name-error,
+#content .content-b form .has-error #email-error,
+#content .content-b form .has-error #password-error,
+#content .content-b form .has-error #password2-error {
   color: rgba(248, 98, 98, 0.8);
   float: right;
   padding-right: 1rem;
